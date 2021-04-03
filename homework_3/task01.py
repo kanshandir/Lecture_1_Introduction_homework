@@ -14,11 +14,4 @@ Write a function that detects if a number is Armstrong number in functionaly sty
 
 
 def is_armstrong(number: int) -> bool:
-    n_string = str(number)
-    n_length = len(n_string)
-    first_step = map(int, n_string)
-    second_step = map(lambda x: x ** n_length, first_step)
-    if sum(second_step) == number:
-        return True
-    else:
-        return False
+    return sum(map(lambda x: int(x) ** len(str(number)), str(number))) == number

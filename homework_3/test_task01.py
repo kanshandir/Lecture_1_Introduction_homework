@@ -1,4 +1,4 @@
-from python_homework.homework_3.task01 import is_armstrong
+from task01 import is_armstrong
 
 
 def test_nine():
